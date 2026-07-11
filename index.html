@@ -2,60 +2,207 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>20 July ❤️</title>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>20 July ❤️</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet"
+href="intro.css">
+
 </head>
 
 <body>
 
-  <!-- Animated Background -->
-  <div class="background">
-    <div class="stars"></div>
-    <div class="glow"></div>
-  </div>
+<!-- ========================= -->
 
-  <!-- Main Content -->
-  <main class="container">
+<!-- INTRO -->
 
-    <p class="small-title">
-      A journey that began with one reply...
-    </p>
+<!-- ========================= -->
 
-    <h1 class="title">
-      20 JULY
-    </h1>
+<section id="intro">
 
-    <p class="subtitle">
-      365 Days.<br>
-      Countless Memories.<br>
-      One Beautiful Story.
-    </p>
+<div class="intro-background">
 
-    <button id="startBtn">
-      Begin Our Journey ❤️
-    </button>
+<div class="stars"></div>
 
-  </main>
+<div class="moon"></div>
 
-  <!-- Footer -->
-  <footer>
+</div>
 
-    <p>
-      Made with ❤️ by Sumon
-    </p>
+<div class="clock-box">
 
-  </footer>
+<div id="clock">
 
-  <script src="script.js"></script>
+11:59:50 PM
+
+</div>
+
+<div id="date">
+
+19 July 2025
+
+</div>
+
+</div>
+
+<div id="noteArea">
+
+<div class="note hidden"
+id="note1">
+
+💭 Ghumai.
+
+</div>
+
+<div class="reply hidden"
+id="note2">
+
+💙 Ghuman.
+
+</div>
+
+</div>
+
+<div id="introText"
+class="hidden">
+
+<p>
+
+Neither of us knew...
+
+</p>
+
+<p>
+
+One little reply...
+
+</p>
+
+<p>
+
+would become
+
+our favourite story.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- HOME -->
+
+<!-- ========================= -->
+
+<section id="home">
+
+<div class="background">
+
+<div class="stars"></div>
+
+<div class="glow"></div>
+
+</div>
+
+<main class="container">
+
+<p class="small-title">
+
+A journey that began
+with one reply...
+
+</p>
+
+<h1 class="title">
+
+20 JULY
+
+</h1>
+
+<p class="subtitle">
+
+365 Days.
+
+<br>
+
+Countless Memories.
+
+<br>
+
+One Beautiful Story.
+
+</p>
+
+<button id="startJourney">
+
+Begin Our Journey ❤️
+
+</button>
+
+</main>
+
+<footer>
+
+Made with ❤️ by Sumon
+
+</footer>
+
+</section>
+
+  <!-- ========================= -->
+<!-- STORY CONTAINER -->
+<!-- ========================= -->
+
+<section id="story" class="hidden">
+
+<div id="storyContainer">
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TRANSITION OVERLAY -->
+<!-- ========================= -->
+
+<div id="overlay"></div>
+
+<!-- ========================= -->
+<!-- AUDIO (FOR FUTURE) -->
+<!-- ========================= -->
+
+<audio id="bgMusic" loop>
+
+<source src="assets/audio/theme.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ========================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================= -->
+
+<script src="intro.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 
