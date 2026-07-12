@@ -529,3 +529,12 @@ background:#7aa8ff;
 color:white;
 
 }
+
+#introScreen,
+#homeScreen{
+    transition: opacity 1s ease;
+}
+
+#homeScreen{
+    opacity:0;
+}
