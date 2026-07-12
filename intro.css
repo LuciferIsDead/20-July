@@ -1,1 +1,531 @@
+/* ===========================
+   INTRO SCREEN
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+    background:#030712;
+    color:#ffffff;
+}
+
+/* ===========================
+   INTRO
+=========================== */
+
+#introScreen{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#020617;
+    overflow:hidden;
+    z-index:999;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.introBackground{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+}
+
+/* ===========================
+   STARS
+=========================== */
+
+.stars{
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(white 1px,transparent 1px);
+
+    background-size:
+    120px 120px,
+    180px 180px,
+    250px 250px;
+
+    opacity:.55;
+
+    animation:
+    twinkle 6s ease-in-out infinite;
+}
+
+/* ===========================
+   MOON
+=========================== */
+
+.moon{
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    right:8%;
+
+    top:8%;
+
+    background:#f7f4e8;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.4),
+    0 0 80px rgba(180,220,255,.3),
+    0 0 150px rgba(120,170,255,.15);
+
+    animation:
+    moonGlow 5s ease-in-out infinite;
+}
+
+/* ===========================
+   HIDDEN
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes moonGlow{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.04);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.45;
+
+}
+
+50%{
+
+opacity:.8;
+
+}
+
+100%{
+
+opacity:.45;
+
+}
+
+}
+
+/* ===========================
+   CLOCK
+=========================== */
+
+.clockContainer{
+
+    position:relative;
+
+    z-index:10;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+#clock{
+
+    font-size:3.8rem;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    color:#ffffff;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.35);
+
+}
+
+#introDate{
+
+    margin-top:12px;
+
+    font-size:1.15rem;
+
+    font-weight:300;
+
+    color:#b9c7df;
+
+    letter-spacing:2px;
+
+}
+
+/* ===========================
+   INSTAGRAM NOTE
+=========================== */
+
+#noteContainer{
+
+    position:relative;
+
+    z-index:10;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.noteBubble{
+
+    min-width:240px;
+
+    padding:16px 28px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    text-align:center;
+
+    font-size:1.2rem;
+
+    font-weight:500;
+
+    color:white;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.35);
+
+    transition:.8s;
+
+}
+
+.reply{
+
+    background:rgba(76,140,255,.18);
+
+    border:1px solid rgba(110,170,255,.25);
+
+}
+
+/* ===========================
+   INTRO SENTENCE
+=========================== */
+
+#introSentence{
+
+    position:absolute;
+
+    bottom:12%;
+
+    width:90%;
+
+    text-align:center;
+
+    z-index:10;
+
+}
+
+#introSentence p{
+
+    margin:10px 0;
+
+    font-size:1.15rem;
+
+    font-weight:300;
+
+    color:#d8e2f1;
+
+    opacity:0;
+
+    animation:fadeLine 1.2s forwards;
+
+}
+
+#introSentence p:nth-child(2){
+
+    animation-delay:1.2s;
+
+}
+
+#introSentence p:nth-child(3){
+
+    animation-delay:2.4s;
+
+}
+
+/* ===========================
+   SHOW CLASS
+=========================== */
+
+.show{
+
+    opacity:1 !important;
+
+    pointer-events:auto;
+
+}
+
+/* ===========================
+   FADE ANIMATIONS
+=========================== */
+
+@keyframes fadeLine{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+   HOME SCREEN
+=========================== */
+
+#homeScreen{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#030712;
+    transition:opacity 1.2s ease;
+}
+
+/* ===========================
+   OVERLAY
+=========================== */
+
+#overlay{
+    position:fixed;
+    inset:0;
+    background:#000;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 1s ease;
+    z-index:998;
+}
+
+#overlay.active{
+    opacity:1;
+}
+
+/* ===========================
+   FADE HELPERS
+=========================== */
+
+.fadeIn{
+    animation:fadeIn 1s forwards;
+}
+
+.fadeOut{
+    animation:fadeOut 1s forwards;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+#clock{
+
+font-size:2.4rem;
+
+letter-spacing:1px;
+
+}
+
+#introDate{
+
+font-size:.95rem;
+
+}
+
+.moon{
+
+width:120px;
+
+height:120px;
+
+top:6%;
+
+right:6%;
+
+}
+
+.noteBubble{
+
+width:85%;
+
+min-width:auto;
+
+font-size:1rem;
+
+padding:14px 18px;
+
+}
+
+#introSentence{
+
+bottom:8%;
+
+width:88%;
+
+}
+
+#introSentence p{
+
+font-size:1rem;
+
+line-height:1.6;
+
+}
+
+}
+
+/* ===========================
+   SMALL DEVICES
+=========================== */
+
+@media(max-width:400px){
+
+#clock{
+
+font-size:2rem;
+
+}
+
+.noteBubble{
+
+font-size:.95rem;
+
+}
+
+#introSentence p{
+
+font-size:.92rem;
+
+}
+
+}
+
+/* ===========================
+   SMOOTH SCROLL
+=========================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* ===========================
+   TEXT SELECTION
+=========================== */
+
+::selection{
+
+background:#7aa8ff;
+
+color:white;
+
+}
