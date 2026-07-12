@@ -30,15 +30,13 @@ href="intro.css">
 
 <body>
 
-<!-- ========================= -->
+<!-- ===================== -->
+<!-- INTRO SCREEN -->
+<!-- ===================== -->
 
-<!-- INTRO -->
+<section id="introScreen">
 
-<!-- ========================= -->
-
-<section id="intro">
-
-<div class="intro-background">
+<div class="introBackground">
 
 <div class="stars"></div>
 
@@ -46,7 +44,7 @@ href="intro.css">
 
 </div>
 
-<div class="clock-box">
+<div class="clockContainer">
 
 <div id="clock">
 
@@ -54,7 +52,7 @@ href="intro.css">
 
 </div>
 
-<div id="date">
+<div id="introDate">
 
 19 July 2025
 
@@ -62,17 +60,17 @@ href="intro.css">
 
 </div>
 
-<div id="noteArea">
+<div id="noteContainer">
 
-<div class="note hidden"
-id="note1">
+<div class="noteBubble hidden"
+id="ghumai">
 
 💭 Ghumai.
 
 </div>
 
-<div class="reply hidden"
-id="note2">
+<div class="noteBubble reply hidden"
+id="ghuman">
 
 💙 Ghuman.
 
@@ -80,40 +78,25 @@ id="note2">
 
 </div>
 
-<div id="introText"
+<div id="introSentence"
 class="hidden">
 
-<p>
+<p>Neither of us knew...</p>
 
-Neither of us knew...
+<p>that one little reply...</p>
 
-</p>
-
-<p>
-
-One little reply...
-
-</p>
-
-<p>
-
-would become
-
-our favourite story.
-
-</p>
+<p>would become our favourite story.</p>
 
 </div>
 
 </section>
 
-<!-- ========================= -->
+<!-- ===================== -->
+<!-- HOME SCREEN -->
+<!-- ===================== -->
 
-<!-- HOME -->
-
-<!-- ========================= -->
-
-<section id="home">
+<section id="homeScreen"
+class="hidden">
 
 <div class="background">
 
@@ -125,20 +108,20 @@ our favourite story.
 
 <main class="container">
 
-<p class="small-title">
+<p class="smallTitle">
 
 A journey that began
 with one reply...
 
 </p>
 
-<h1 class="title">
+<h1>
 
 20 JULY
 
 </h1>
 
-<p class="subtitle">
+<p class="subTitle">
 
 365 Days.
 
@@ -152,9 +135,9 @@ One Beautiful Story.
 
 </p>
 
-<button id="startJourney">
+<button id="reliveBtn">
 
-Begin Our Journey ❤️
+Relive Our Story ❤️
 
 </button>
 
@@ -168,37 +151,156 @@ Made with ❤️ by Sumon
 
 </section>
 
-  <!-- ========================= -->
-<!-- STORY CONTAINER -->
-<!-- ========================= -->
+  <!-- ===================== -->
+<!-- STORY SCREEN -->
+<!-- ===================== -->
 
-<section id="story" class="hidden">
+<section id="storyScreen" class="hidden">
 
-<div id="storyContainer">
+<div id="storyWrapper">
+
+<div class="storyCard">
+
+<span class="chapter">
+
+CHAPTER 01
+
+</span>
+
+<h2 id="chapterTitle">
+
+The Night Everything Changed
+
+</h2>
+
+<p id="chapterText">
+
+Our story started with one simple reply.
+Neither of us knew that this conversation
+would become the beginning of something
+so beautiful.
+
+</p>
+
+<button id="nextStory">
+
+Continue ❤️
+
+</button>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- ========================= -->
-<!-- TRANSITION OVERLAY -->
-<!-- ========================= -->
+<!-- ===================== -->
+<!-- MEMORY OVERLAY -->
+<!-- ===================== -->
 
-<div id="overlay"></div>
+<div id="memoryOverlay" class="hidden">
 
-<!-- ========================= -->
-<!-- AUDIO (FOR FUTURE) -->
-<!-- ========================= -->
+<div class="memoryBox">
+
+<h3 id="memoryTitle">
+
+Memory
+
+</h3>
+
+<p id="memoryDescription">
+
+Loading...
+
+</p>
+
+<button id="closeMemory">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+<!-- LOADING SCREEN -->
+<!-- ===================== -->
+
+<div id="loadingScreen" class="hidden">
+
+<div class="loaderCircle"></div>
+
+<p>
+
+Loading our memories...
+
+</p>
+
+</div>
+
+<!-- ===================== -->
+<!-- BACKGROUND AUDIO -->
+<!-- ===================== -->
 
 <audio id="bgMusic" loop>
 
-<source src="assets/audio/theme.mp3" type="audio/mpeg">
+<source src="assets/audio/theme.mp3"
+type="audio/mpeg">
 
 </audio>
 
-<!-- ========================= -->
+<audio id="clickSound">
+
+<source src="assets/audio/click.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<audio id="nightAmbience" loop>
+
+<source src="assets/audio/night.mp3"
+type="audio/mpeg">
+
+</audio>
+
+  <!-- ===================== -->
+<!-- FUTURE CHAPTERS -->
+<!-- ===================== -->
+
+<section id="futureChapters" class="hidden">
+
+<div id="chapterHolder">
+
+<!--
+Future versions will inject chapters here:
+
+Chapter 02 - The Instagram GC
+Chapter 03 - Fake Couple
+Chapter 04 - The Identity
+Chapter 05 - White Rose
+Chapter 06 - Engagement Band
+Chapter 07 - Rajshahi
+Chapter 08 - Window Kisses
+Chapter 09 - Toggy
+Chapter 10 - 4:15 AM
+Chapter 11 - The Future
+-->
+
+</div>
+
+</section>
+
+<!-- ===================== -->
+<!-- GLOBAL OVERLAY -->
+<!-- ===================== -->
+
+<div id="overlay" class="hidden"></div>
+
+<!-- ===================== -->
 <!-- JAVASCRIPT -->
-<!-- ========================= -->
+<!-- ===================== -->
 
 <script src="intro.js"></script>
 
